@@ -1,0 +1,45 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin p() {
+  font-size: $font-size;
+  font-family: Lato-light;
+  color: white;
+}
+@mixin h1() {
+  font-size: 51px;
+  font-family:"Lato-bold";
+  color: white;
+}
+@mixin section-titles() {
+  font-size: 27px;
+  font-family:"Lato-regular";
+  color: $title-color;
+  text-align: center;
+  padding: 40px 0;
+}
+@mixin more{
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  color: $default-color;
+  font-size:18px;
+  border: 1px solid white;
+  font-family: $font-family;
+  text-align: center;
+
+  &:hover{
+    background-color: white;
+    color: black;
+    transition: 1500ms;
+  }
+}
+@mixin box-book-style{
+    color: $main-color;
+    font-family: "Lato-regular";
+    display: block;
+    text-align: center;
+}
+

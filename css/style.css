@@ -1,0 +1,816 @@
+@font-face {
+  font-family: 'Lato-light', serif;
+  src: url("../font/Lato-Light.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-bold';
+  src: url("../font/Lato-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Lato-regular';
+  src: url("../font/Lato-Regular_0.ttf"); }
+
+@font-face {
+  font-family: 'Lato-bold';
+  src: url("../font/Lato-Bold.ttf"); }
+
+/**********commoon style*******/
+.content {
+  width: 63%;
+  margin: 0 auto; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow-x: hidden; }
+
+/**********header style*******/
+header {
+  padding: 20px 0; }
+  header .content .white-bg-navbar {
+    background-color: white !important;
+    margin: 7px auto; }
+    header .content .white-bg-navbar .logo-image img {
+      width: 100%; }
+    header .content .white-bg-navbar div ul li {
+      margin-right: 23px; }
+      header .content .white-bg-navbar div ul li .active {
+        border-bottom: 2px solid #132c40;
+        content: "";
+        display: block;
+        -webkit-transition: width 250ms ease-in-out 0s;
+        -o-transition: width 250ms ease-in-out 0s;
+        transition: width 250ms ease-in-out 0s;
+        width: 100%;
+        padding: unset; }
+      header .content .white-bg-navbar div ul li a {
+        font-family: "Lato-light";
+        font-size: 16px;
+        color: black;
+        margin: unset;
+        padding-top: unset; }
+        header .content .white-bg-navbar div ul li a:after {
+          border-bottom: 2px solid #132c40;
+          content: "";
+          display: block;
+          -webkit-transition: width 250ms ease-in-out 0s;
+          -o-transition: width 250ms ease-in-out 0s;
+          transition: width 250ms ease-in-out 0s;
+          width: 0; }
+        header .content .white-bg-navbar div ul li a:hover:after {
+          -webkit-transition: width 100ms ease-in-out 0s;
+          -o-transition: width 100ms ease-in-out 0s;
+          transition: width 100ms ease-in-out 0s;
+          width: 100%; }
+
+/**********main style*******/
+section.first-section {
+  height: 764px; }
+  section.first-section .slide .fw-container {
+    position: relative; }
+    section.first-section .slide .fw-container img {
+      width: 100%; }
+    section.first-section .slide .fw-container .slogan {
+      position: absolute;
+      top: 254px;
+      left: 360px; }
+      section.first-section .slide .fw-container .slogan p {
+        font-size: 20px;
+        font-family: Lato-light;
+        color: white; }
+      section.first-section .slide .fw-container .slogan h1 {
+        font-size: 51px;
+        font-family: "Lato-bold";
+        color: white;
+        padding: 21px 0 37px 0; }
+      section.first-section .slide .fw-container .slogan a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        color: white;
+        font-size: 18px;
+        border: 1px solid white;
+        font-family: "Lato-light";
+        text-align: center;
+        display: inline-block;
+        padding: 5px 17px !important; }
+        section.first-section .slide .fw-container .slogan a:hover {
+          background-color: white;
+          color: black;
+          -webkit-transition: 1500ms;
+          -o-transition: 1500ms;
+          transition: 1500ms; }
+
+section.find-book .content .find-inputs {
+  margin-top: 40px; }
+  section.find-book .content .find-inputs div input, section.find-book .content .find-inputs div select {
+    background-color: #edf3f4;
+    width: 100%;
+    height: 40px;
+    border-radius: unset;
+    border-color: transparent;
+    outline: unset; }
+    section.find-book .content .find-inputs div input option, section.find-book .content .find-inputs div select option {
+      color: #444247;
+      font-size: 16px;
+      font-family: "Lato-light"; }
+  section.find-book .content .find-inputs div ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #444247;
+    font-size: 16px;
+    opacity: 0.8;
+    padding-left: 10px; }
+    section.find-book .content .find-inputs div ::-webkit-input-placeholder:focus::-webkit-input-placeholder {
+      color: transparent; }
+  section.find-book .content .find-inputs .margin-top-style {
+    margin-top: 24px; }
+    section.find-book .content .find-inputs .margin-top-style a {
+      background-color: #132c40;
+      display: block;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      border: 1px solid white;
+      font-family: "Lato-light";
+      text-align: center;
+      padding: 6px; }
+
+section.popular-books, section.popular-curses {
+  margin: 40px 0 104px 0;
+  padding-bottom: 75px;
+  background-color: #edf3f4; }
+  section.popular-books .section-title h2, section.popular-curses .section-title h2 {
+    font-size: 27px;
+    font-family: "Lato-regular";
+    color: #2f2b35;
+    text-align: center;
+    padding: 40px 0; }
+  section.popular-books .books-box-item, section.popular-curses .books-box-item {
+    background-color: white;
+    border: 10px solid #edf3f4; }
+    section.popular-books .books-box-item .book-tab-dec .text, section.popular-curses .books-box-item .book-tab-dec .text {
+      margin-bottom: 30px; }
+      section.popular-books .books-box-item .book-tab-dec .text small, section.popular-books .books-box-item .book-tab-dec .text a, section.popular-books .books-box-item .book-tab-dec .text span, section.popular-curses .books-box-item .book-tab-dec .text small, section.popular-curses .books-box-item .book-tab-dec .text a, section.popular-curses .books-box-item .book-tab-dec .text span {
+        color: #6f6c73;
+        font-family: "Lato-regular";
+        display: block;
+        text-align: center; }
+      section.popular-books .books-box-item .book-tab-dec .text a, section.popular-curses .books-box-item .book-tab-dec .text a {
+        margin-bottom: 20px; }
+      section.popular-books .books-box-item .book-tab-dec .text small, section.popular-curses .books-box-item .book-tab-dec .text small {
+        font-size: 22px; }
+      section.popular-books .books-box-item .book-tab-dec .text div, section.popular-curses .books-box-item .book-tab-dec .text div {
+        margin: 0; }
+        section.popular-books .books-box-item .book-tab-dec .text div a, section.popular-curses .books-box-item .book-tab-dec .text div a {
+          font-size: 16px;
+          display: inline-block;
+          text-align: center;
+          text-decoration: none;
+          padding: 10px; }
+          section.popular-books .books-box-item .book-tab-dec .text div a i, section.popular-curses .books-box-item .book-tab-dec .text div a i {
+            padding: 0 7px; }
+      section.popular-books .books-box-item .book-tab-dec .text .buy a, section.popular-curses .books-box-item .book-tab-dec .text .buy a {
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid #ccc8d0;
+        margin: 0;
+        display: inline-block;
+        width: 50%;
+        margin-right: -5px !important; }
+        section.popular-books .books-box-item .book-tab-dec .text .buy a i, section.popular-curses .books-box-item .book-tab-dec .text .buy a i {
+          padding: 0 9px; }
+      section.popular-books .books-box-item .book-tab-dec .text span, section.popular-curses .books-box-item .book-tab-dec .text span {
+        font-size: 24px;
+        display: block;
+        color: #2f2b35;
+        padding: 15px 0; }
+        section.popular-books .books-box-item .book-tab-dec .text span sub, section.popular-curses .books-box-item .book-tab-dec .text span sub {
+          bottom: 0;
+          font-size: 24px;
+          padding: 0 6px; }
+    section.popular-books .books-box-item .book-tab-dec figure img, section.popular-curses .books-box-item .book-tab-dec figure img {
+      width: 100%;
+      margin-top: 17px; }
+    section.popular-books .books-box-item:hover, section.popular-curses .books-box-item:hover {
+      -webkit-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+      -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+      transform: scale(0.95);
+      -webkit-transition: 1000ms;
+      -o-transition: 1000ms;
+      transition: 1000ms; }
+
+section.featured-book .img-one img, section.featured-book .img-two img {
+  width: 100%;
+  -webkit-transform: rotate(15deg) scale(1.4);
+  -ms-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+section.featured-book .img-one:hover img, section.featured-book .img-two:hover img {
+  -webkit-transform: rotate(0) scale(1);
+  -ms-transform: rotate(15deg) scale(0.8);
+  transform: rotate(15deg) scale(0.8); }
+
+section.featured-book div h5 a {
+  font-size: 20px;
+  font-family: "Lato-light";
+  color: #6f6c73;
+  text-decoration: none; }
+
+section.featured-book div h2 a {
+  font-family: "Lato-regular";
+  font-size: 26px;
+  color: #444247;
+  text-decoration: none; }
+
+section.featured-book div span {
+  font-family: "Lato-light";
+  font-size: 14px;
+  color: #6f6c73; }
+
+section.featured-book div p {
+  font-size: 20px;
+  font-family: "Lato-light";
+  color: #6f6c73;
+  padding: 35px 0; }
+
+section.featured-book div .more {
+  padding: 15px;
+  color: #2f2b35;
+  font-size: 17px;
+  font-family: "Lato-regular";
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-top-color: #2f2b35;
+  border-right-color: #2f2b35;
+  border-bottom-color: #cac4c4;
+  border-left-color: #cac4c4; }
+  section.featured-book div .more:hover {
+    background-color: #132c40;
+    color: white;
+    -webkit-transition: 1500ms;
+    -o-transition: 1500ms;
+    transition: 1500ms; }
+
+section.popular-curses {
+  background-color: #132c40;
+  margin: 40px 0 0 0; }
+  section.popular-curses .section-title h2 {
+    font-size: 27px;
+    font-family: "Lato-regular";
+    color: #2f2b35;
+    text-align: center;
+    padding: 40px 0;
+    color: white; }
+  section.popular-curses .books-box-item {
+    border: 10px solid #132c40; }
+    section.popular-curses .books-box-item .book-tab-dec .text {
+      margin-bottom: unset; }
+      section.popular-curses .books-box-item .book-tab-dec .text p, section.popular-curses .books-box-item .book-tab-dec .text a {
+        display: inline-block;
+        padding: 20px 0; }
+      section.popular-curses .books-box-item .book-tab-dec .text p {
+        font-family: "Lato-light";
+        font-size: 15px;
+        color: #6f6c73; }
+      section.popular-curses .books-box-item .book-tab-dec .text a {
+        background-color: #2f2b35;
+        display: inline-block;
+        color: white;
+        border: 1px solid #2f2b35;
+        padding: 3px 22px;
+        text-decoration: none;
+        text-align: center; }
+        section.popular-curses .books-box-item .book-tab-dec .text a:hover {
+          background-color: white;
+          color: #2f2b35;
+          -webkit-transition: 1500ms;
+          -o-transition: 1500ms;
+          transition: 1500ms; }
+
+section.library {
+  background-image: url("../img/section/bg.png");
+  background-size: cover;
+  background-position: center center;
+  text-align: center; }
+  section.library .content .lib-title {
+    padding: 90px 0; }
+    section.library .content .lib-title h2 {
+      font-size: 33px;
+      font-family: Lato-regular;
+      color: white;
+      padding-bottom: 30px; }
+    section.library .content .lib-title a {
+      font-size: 18px;
+      font-family: "Lato-light";
+      color: white;
+      text-decoration: none; }
+      section.library .content .lib-title a i {
+        color: white; }
+
+section.logo-of-books-page {
+  margin: 40px 0; }
+  section.logo-of-books-page .content {
+    text-align: center; }
+    section.logo-of-books-page .content .first-box-item {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      background-color: white; }
+      section.logo-of-books-page .content .first-box-item img {
+        width: 10%; }
+      section.logo-of-books-page .content .first-box-item h3 {
+        font-family: "Lato-regular";
+        font-size: 24px;
+        color: #6f6c73;
+        padding-top: 35px; }
+      section.logo-of-books-page .content .first-box-item p {
+        font-family: "Lato-light";
+        font-size: 13px;
+        color: #6f6c73;
+        padding: 20px 0; }
+    section.logo-of-books-page .content .last-box-item img {
+      width: 6%; }
+    section.logo-of-books-page .content .last-box-item h3 {
+      font-family: "Lato-regular";
+      font-size: 24px;
+      color: #6f6c73;
+      padding-top: 27px; }
+    section.logo-of-books-page .content .last-box-item p {
+      font-family: "Lato-light";
+      font-size: 13px;
+      color: #6f6c73;
+      padding: 20px 0; }
+
+section.books-typs .sales-img {
+  margin-bottom: 50px;
+  position: relative;
+  padding: unset;
+  border: 10px solid transparent; }
+  section.books-typs .sales-img a {
+    width: 100%;
+    padding: unset; }
+    section.books-typs .sales-img a img {
+      width: 100%; }
+  section.books-typs .sales-img .position-box {
+    position: absolute;
+    top: 46%;
+    width: 100%;
+    text-align: center; }
+    section.books-typs .sales-img .position-box div button {
+      color: white;
+      font-size: 16px;
+      font-family: "Lato-light";
+      border: unset;
+      border-radius: unset;
+      padding: 10px 20px; }
+    section.books-typs .sales-img .position-box div .btn-1 {
+      background-color: #27c8ea; }
+      section.books-typs .sales-img .position-box div .btn-1:hover {
+        background-color: white;
+        color: #27c8ea;
+        -webkit-transition: 1500ms;
+        -o-transition: 1500ms;
+        transition: 1500ms; }
+    section.books-typs .sales-img .position-box div .btn-2 {
+      background-color: #7d4dde; }
+      section.books-typs .sales-img .position-box div .btn-2:hover {
+        background-color: white;
+        color: #7d4dde;
+        -webkit-transition: 1500ms;
+        -o-transition: 1500ms;
+        transition: 1500ms; }
+    section.books-typs .sales-img .position-box div .btn-3 {
+      background-color: #dc4dde; }
+      section.books-typs .sales-img .position-box div .btn-3:hover {
+        background-color: white;
+        color: #dc4dde;
+        -webkit-transition: 1500ms;
+        -o-transition: 1500ms;
+        transition: 1500ms; }
+    section.books-typs .sales-img .position-box div h2 {
+      font-size: 24px;
+      font-family: "Lato-regular";
+      color: white;
+      margin: 20px auto; }
+    section.books-typs .sales-img .position-box div .color-gray {
+      color: #6f6c73; }
+    section.books-typs .sales-img .position-box div a {
+      color: white;
+      background-color: #132c40;
+      font-size: 16px;
+      font-family: "Lato-light";
+      text-align: center;
+      padding: 10px 20px;
+      border: 1px solid  #132c40;
+      margin: 30px auto;
+      text-decoration: none; }
+
+section.news-and-events .content .section-title h2 {
+  font-size: 27px;
+  font-family: "Lato-regular";
+  color: #2f2b35;
+  text-align: center;
+  padding: 40px 0; }
+
+section.news-and-events .content .bloging h2 a {
+  font-family: "Lato-bold";
+  font-size: 15px;
+  color: #0889ee;
+  text-decoration: none; }
+
+section.news-and-events .content .bloging p {
+  color: #757575;
+  font-family: Lato-regular;
+  font-size: 13px; }
+
+section.news-and-events .content .bloging time {
+  float: right;
+  font-size: 12px;
+  font-family: "Lato-regular";
+  color: #a3a3a3; }
+
+section.news-and-events .content .bloging figure {
+  position: relative; }
+  section.news-and-events .content .bloging figure img {
+    width: 100%; }
+  section.news-and-events .content .bloging figure:before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    -ms-transform: skewX(-25deg);
+    transform: skewX(-25deg); }
+    section.news-and-events .content .bloging figure:before:hover:before {
+      -webkit-animation: shine .75s;
+      animation: shine .75s;
+      left: 20%; }
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%; } }
+
+@keyframes shine {
+  100% {
+    left: 125%; } }
+
+section.news-and-events .content div ul .with-border-shadow {
+  -webkit-box-shadow: 0 0 8px  #c4b1b1;
+  box-shadow: 0 0 8px  #c4b1b1;
+  border-radius: 3px;
+  height: 100%; }
+
+section.news-and-events .content div ul li p {
+  font-size: 29px;
+  font-family: "Lato-bold";
+  color: black;
+  text-align: center; }
+
+section.news-and-events .content div ul li span {
+  background-color: #0889ee;
+  padding: 10px 20px; }
+
+section.news-and-events .content div ul .with-min-width {
+  width: 70%; }
+  section.news-and-events .content div ul .with-min-width h4 {
+    color: #132c40;
+    font-size: 18px;
+    font-family: "Lato-bold"; }
+  section.news-and-events .content div ul .with-min-width p {
+    font-family: "Lato-regular";
+    font-size: 14px;
+    color: #6e6e6e;
+    text-align: unset; }
+
+section.news-and-events .content .more {
+  text-align: center;
+  margin: 50px auto; }
+  section.news-and-events .content .more a {
+    text-align: center;
+    padding: 10px 40px;
+    color: #2f2b35;
+    font-size: 17px;
+    font-family: "Lato-regular";
+    text-decoration: none;
+    border: 1px solid #2f2b35; }
+
+section.last-box {
+  margin: 110px auto; }
+  section.last-box img {
+    width: 100%; }
+
+footer {
+  text-align: center; }
+  footer .footer-box {
+    background-color: #132c40;
+    padding: 20px 0; }
+    footer .footer-box div ul li {
+      padding: 10px; }
+      footer .footer-box div ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "Lato-regular"; }
+    footer .footer-box p, footer .footer-box a {
+      color: white;
+      font-size: 13px;
+      font-family: "Lato-light"; }
+      footer .footer-box p a, footer .footer-box a a {
+        text-decoration: none; }
+
+.carousel-indicators {
+  bottom: 90px !important; }
+  .carousel-indicators li {
+    height: 8px !important; }
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 36px;
+  height: 9px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity .2s ease;
+  -o-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  border-radius: unset; }
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  position: relative;
+  bottom: 150px; }
+
+.price-range-slider {
+  width: 100%;
+  float: left;
+  padding: 10px 20px; }
+  .price-range-slider .range-value {
+    margin: 0; }
+    .price-range-slider .range-value input {
+      width: 100%;
+      background: none;
+      color: #000;
+      font-size: 16px;
+      font-weight: initial;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: none;
+      margin: 20px 0 20px 0; }
+  .price-range-slider .range-bar {
+    border: none;
+    background: #000;
+    height: 3px;
+    width: 96%;
+    margin-left: 8px; }
+    .price-range-slider .range-bar .ui-slider-range {
+      background: #06b9c0; }
+    .price-range-slider .range-bar .ui-slider-handle {
+      border: none;
+      border-radius: 25px;
+      background: #fff;
+      border: 2px solid #06b9c0;
+      height: 17px;
+      width: 17px;
+      top: -0.52em;
+      cursor: pointer; }
+    .price-range-slider .range-bar .ui-slider-handle + span {
+      background: #06b9c0; }
+
+/*--- /.price-range-slider ---*/
+@media only screen and (max-width: 2700px) and (min-width: 320px) {
+  section.first-section {
+    height: auto; } }
+
+@media only screen and (max-width: 1600px) and (min-width: 968px) {
+  section.first-section .slide .fw-container {
+    position: relative; }
+    section.first-section .slide .fw-container img {
+      width: 100%; }
+    section.first-section .slide .fw-container .slogan {
+      top: 130px; }
+      section.first-section .slide .fw-container .slogan h1 {
+        font-size: 51px;
+        font-family: "Lato-bold";
+        color: white;
+        padding: 0px 0 24px 0; }
+      section.first-section .slide .fw-container .slogan a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        color: white;
+        font-size: 18px;
+        border: 1px solid white;
+        font-family: "Lato-light";
+        text-align: center;
+        display: inline-block;
+        padding: 10px; }
+        section.first-section .slide .fw-container .slogan a:hover {
+          background-color: white;
+          color: black;
+          -webkit-transition: 1500ms;
+          -o-transition: 1500ms;
+          transition: 1500ms; }
+  section.news-and-events .content div ul .with-min-width {
+    width: 60%; }
+    section.news-and-events .content div ul .with-min-width h4 {
+      font-size: 13px; }
+    section.news-and-events .content div ul .with-min-width p {
+      font-size: 12px; } }
+
+@media only screen and (max-width: 968px) and (min-width: 320px) {
+  header .content .white-bg-navbar {
+    background-color: white !important; }
+    header .content .white-bg-navbar .logo-image {
+      width: 70%; }
+      header .content .white-bg-navbar .logo-image img {
+        width: 70%; }
+  .content {
+    width: 88%; }
+  section.first-section .slide .fw-container {
+    position: relative; }
+    section.first-section .slide .fw-container img {
+      width: 100%; }
+    section.first-section .slide .fw-container .slogan {
+      position: absolute;
+      top: 33px;
+      left: 100px; }
+      section.first-section .slide .fw-container .slogan p {
+        font-size: 20px;
+        font-family: Lato-light;
+        color: white;
+        font-size: 18px; }
+      section.first-section .slide .fw-container .slogan h1 {
+        font-size: 51px;
+        font-family: "Lato-bold";
+        color: white;
+        padding: unset;
+        font-size: 22px; }
+      section.first-section .slide .fw-container .slogan a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        color: white;
+        font-size: 18px;
+        border: 1px solid white;
+        font-family: "Lato-light";
+        text-align: center;
+        display: inline-block;
+        padding: 5px;
+        margin-top: 16px; }
+        section.first-section .slide .fw-container .slogan a:hover {
+          background-color: white;
+          color: black;
+          -webkit-transition: 1500ms;
+          -o-transition: 1500ms;
+          transition: 1500ms; }
+  section.featured-book div img {
+    margin-top: 60px; }
+  section.popular-curses .books-box-item .book-tab-dec .text a {
+    margin-bottom: 20px; }
+  section.books-typs .sales-img .position-box {
+    top: 22px; }
+    section.books-typs .sales-img .position-box div h2 {
+      font-size: 15px;
+      font-family: "Lato-regular";
+      color: white;
+      margin: 5px auto; }
+    section.books-typs .sales-img .position-box div .btn-1, section.books-typs .sales-img .position-box div .btn-2, section.books-typs .sales-img .position-box div .btn-3 {
+      font-size: 16px;
+      font-family: "Lato-light";
+      border: unset;
+      border-radius: unset;
+      padding: 6px 15px; }
+    section.books-typs .sales-img .position-box div a {
+      padding: 5px 20px; }
+  section.news-and-events .content .section-title h2 {
+    padding: 16px 0; }
+  section.news-and-events .content div ul .with-min-width {
+    width: 60%; }
+    section.news-and-events .content div ul .with-min-width h4 {
+      font-size: 13px; }
+    section.news-and-events .content div ul .with-min-width p {
+      font-size: 12px; }
+  section.last-box {
+    margin: 30px auto; }
+  section.popular-books {
+    margin: 40px 0 50px 0;
+    padding-bottom: 50px; }
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: relative;
+    bottom: 90px; }
+  .owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 4px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    border-radius: unset; } }
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  section.books-typs .sales-img .position-box div button {
+    font-size: 12px;
+    padding: 10px 20px; }
+  section.books-typs .sales-img .position-box {
+    top: 30%; }
+    section.books-typs .sales-img .position-box div button {
+      font-size: 12px;
+      padding: 6px 20px; }
+    section.books-typs .sales-img .position-box div a {
+      font-size: 16px;
+      padding: 5px 20px;
+      margin: 30px auto;
+      text-decoration: none; }
+    section.books-typs .sales-img .position-box div {
+      font-size: 19px;
+      font-family: "Lato-regular";
+      color: white;
+      margin: 6px auto; }
+  header .content .white-bg-navbar div ul li a {
+    font-family: "Lato-light";
+    font-size: 12px; }
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    bottom: 75px; } }
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+  header .content .white-bg-navbar {
+    background-color: white !important; }
+    header .content .white-bg-navbar .logo-image img {
+      width: 70%; }
+  .content {
+    width: 88%; }
+  section.first-section {
+    height: 230px; }
+    section.first-section .slide .fw-container {
+      position: relative; }
+      section.first-section .slide .fw-container img {
+        width: 100%;
+        height: 200px; }
+      section.first-section .slide .fw-container .slogan {
+        position: absolute;
+        top: 33px;
+        left: 35px; }
+        section.first-section .slide .fw-container .slogan p {
+          font-size: 20px;
+          font-family: Lato-light;
+          color: white;
+          font-size: 18px; }
+        section.first-section .slide .fw-container .slogan h1 {
+          font-size: 51px;
+          font-family: "Lato-bold";
+          color: white;
+          padding: unset;
+          font-size: 22px; }
+        section.first-section .slide .fw-container .slogan a {
+          display: block;
+          text-decoration: none;
+          padding: 15px;
+          color: white;
+          font-size: 18px;
+          border: 1px solid white;
+          font-family: "Lato-light";
+          text-align: center;
+          display: inline-block;
+          padding: 5px;
+          margin-top: 16px; }
+          section.first-section .slide .fw-container .slogan a:hover {
+            background-color: white;
+            color: black;
+            -webkit-transition: 1500ms;
+            -o-transition: 1500ms;
+            transition: 1500ms; }
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: relative;
+    bottom: 50px; }
+  .owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 4px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    border-radius: unset; } }

@@ -1,0 +1,331 @@
+@media only screen and (max-width: 2700px) and(min-width: 320px) {
+  section.first-section {
+    height: auto;
+
+  }
+}
+
+@media only screen and (max-width: 1600px) and(min-width: 968px) {
+  section.first-section {
+
+    .slide {
+
+      .fw-container {
+        position: relative;
+
+        img {
+          width: 100%;
+        }
+
+        .slogan {
+          top: 130px;
+
+          h1 {
+            @include h1;
+            padding: 0px 0 24px 0;
+          }
+
+          a {
+            @include more;
+            display: inline-block;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+  section.news-and-events{
+    .content{
+      div{
+        ul{
+          .with-min-width{
+            width: 60%;
+            h4{
+              font-size: 13px;
+            }
+            p{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 968px) and(min-width: 320px) {
+
+  header {
+
+    .content {
+
+      .white-bg-navbar {
+        background-color: white !important;
+
+        .logo-image {
+          width: 70%;
+          img {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    width: 88%;
+  }
+
+  section.first-section {
+
+    .slide {
+
+      .fw-container {
+        position: relative;
+
+        img {
+          width: 100%;
+        }
+
+        .slogan {
+          position: absolute;
+          top: 33px;
+          left: 100px;
+
+          p {
+            @include p;
+            font-size: 18px;
+          }
+
+          h1 {
+            @include h1;
+            padding: unset;
+            font-size: 22px;
+          }
+
+          a {
+            @include more;
+            display: inline-block;
+            padding: 5px;
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  section.featured-book{
+    div{
+      img{
+        margin-top: 60px;
+      }
+    }
+  }
+
+  section.popular-curses {
+    .books-box-item {
+      .book-tab-dec {
+        .text {
+          a {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  section.books-typs   {
+    .sales-img{
+      .position-box {
+        top: 22px;
+        div {
+          h2 {
+            font-size: 15px;
+            font-family: "Lato-regular";
+            color: white;
+            margin: 5px auto;;
+          }
+          .btn-1, .btn-2, .btn-3 {
+            font-size: 16px;
+            font-family: "Lato-light";
+            border: unset;
+            border-radius: unset;
+            padding: 6px 15px;
+          }
+          a{
+            padding: 5px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  section.news-and-events{
+    .content{
+      .section-title{
+        h2{
+          padding: 16px 0;
+        }
+      }
+      div{
+        ul{
+          .with-min-width{
+            width: 60%;
+            h4{
+              font-size: 13px;
+            }
+            p{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.last-box{
+    margin: 30px auto;
+  }
+
+  section.popular-books{
+
+    margin: 40px 0 50px 0;
+    padding-bottom: 50px;
+  }
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: relative;
+    bottom: 90px;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 4px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: unset;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  section.books-typs .sales-img .position-box div button{
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  section.books-typs{
+    .sales-img{
+      .position-box{
+        top: 30%;
+        div{
+          button{
+            font-size: 12px;
+            padding: 6px 20px;
+          }
+        }
+        div{
+          a{
+            font-size: 16px;
+            padding: 5px 20px;
+            margin: 30px auto;
+            text-decoration: none;
+          }
+        }
+        div{
+          font-size: 19px;
+          font-family: "Lato-regular";
+          color: white;
+          margin: 6px auto;
+        }
+      }
+    }
+  }
+  header .content .white-bg-navbar div ul li a{
+    font-family: "Lato-light";
+    font-size: 12px;
+  }
+  .owl-theme .owl-nav.disabled + .owl-dots{
+    bottom: 75px;
+  }
+}
+
+@media only screen and (max-width: 768px) and(min-width: 320px) {
+
+  header{
+
+    .content{
+
+      .white-bg-navbar{
+        background-color: white !important;
+
+        .logo-image{
+          img{
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    width: 88%;
+  }
+
+  section.first-section {
+    height: 230px;
+
+    .slide {
+
+      .fw-container {
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 200px;
+        }
+
+        .slogan {
+          position: absolute;
+          top: 33px;
+          left: 35px;
+
+          p {
+            @include p;
+            font-size: 18px;
+          }
+
+          h1 {
+            @include h1;
+            padding: unset;
+            font-size: 22px;
+          }
+
+          a {
+            @include more;
+            display: inline-block;
+            padding: 5px;
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: relative;
+    bottom: 50px;
+  }
+
+  .owl-theme .owl-dots .owl-dot span{
+    width: 20px;
+    height: 4px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius:unset;
+  }
+}
